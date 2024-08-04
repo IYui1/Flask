@@ -17,11 +17,11 @@ login_manager.init_app(app)
 class Base(DeclarativeBase):
     pass
 
-db_path = os.path.join('D:\\ASUS\\.vscode\\frontend\\udemy2\\day-68-starting-files-flask-auth\\instance', 'users.db')
+db_path = os.path.join('YOUR_FILE', 'users.db')
 app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{db_path}"
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
-app.config['UPLOAD_FOLDER'] = 'D:\\ASUS\\.vscode\\frontend\\udemy2\\day-68-starting-files-flask-auth\\static\\files'
+app.config['UPLOAD_FOLDER'] = 'YOUR_FILE'
 
 
 # CREATE TABLE IN DB
